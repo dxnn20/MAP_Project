@@ -1,0 +1,60 @@
+body {
+  background-color: #9ab5dc;
+}
+
+#fillsUpTop{
+  padding-top: 25px;
+
+}
+
+#header{
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #1976d2;
+  height: 100px;
+  transition: 1s all ease;
+}
+
+#header:hover{
+  background-color: #1976d0 ;
+  border-radius: 30px;
+  transition-duration: 1s;
+}
+
+#title{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.chessboard {
+  display: grid;
+  justify-content: center;
+  padding-top: 100px;
+  grid-template-columns: repeat(8, 60px); /* 8 columns, each 50px wide */
+  grid-template-rows: repeat(8, 60px); /* 8 rows, each 50px tall */
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid black;
+}
+
+
+.odd-row:nth-child(even),
+.even-row:nth-child(odd){
+  background-color: #b58863; /* Light color for even rows and odd columns */
+}
+
+.even-row:nth-child(even),
+.odd-row:nth-child(odd){
+  background-color: #f0d9b5; /* Dark color for even columns and odd rows */
+}
