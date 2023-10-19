@@ -1,0 +1,3 @@
+C:/Users/turut/OneDrive/Desktop/UNI/MAP/MAP_Project/MAP_C/cmake-build-debug/CMakeFiles/MAP_C.dir
+C:/Users/turut/OneDrive/Desktop/UNI/MAP/MAP_Project/MAP_C/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/turut/OneDrive/Desktop/UNI/MAP/MAP_Project/MAP_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

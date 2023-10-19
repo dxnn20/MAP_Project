@@ -1,3 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 body {
   background-color: #9ab5dc;
 }
@@ -15,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #1976d2;
+  background-color: #0f71e1;
   height: 100px;
   transition: 1s all ease;
 }
@@ -32,6 +38,10 @@ body {
   text-align: center;
 }
 
+.outerChessBoard{
+  display: inline-block;
+}
+
 .chessboard {
   display: grid;
   justify-content: center;
@@ -46,15 +56,29 @@ body {
   text-align: center;
   line-height: 60px;
   border: 1px solid black;
+  transition: 1s all ease;
 }
-
 
 .odd-row:nth-child(even),
 .even-row:nth-child(odd){
-  background-color: #b58863; /* Light color for even rows and odd columns */
+  background-color: #7d935d; /* Light color for even rows and odd columns */
 }
 
 .even-row:nth-child(even),
 .odd-row:nth-child(odd){
-  background-color: #f0d9b5; /* Dark color for even columns and odd rows */
+  background-color: #ededd4; /* Dark color for even columns and odd rows */
+}
+
+.cell:hover{
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.pawn {
+  background-color: #FFD700; /* Set a gold background color */
+  color: #000; /* Set a black text color */
+  font-weight: bold; /* Make the text bold */
+  border: 2px solid #FFA500; /* Add an orange border */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Add a gold shadow with 70% opacity */
 }
