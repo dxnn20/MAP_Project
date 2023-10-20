@@ -10,14 +10,13 @@ body {
 
 #fillsUpTop{
   padding-top: 25px;
-
 }
 
 #header{
   width: 80%;
+  margin: auto;
+  padding: 0;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -50,23 +49,17 @@ body {
   grid-template-rows: repeat(8, 60px); /* 8 rows, each 50px tall */
 }
 
-.cell {
+.dark {
   width: 60px;
   height: 60px;
   text-align: center;
   line-height: 60px;
   border: 1px solid black;
-  transition: 1s all ease;
+  transition: 0.1s all ease;
 }
 
-.odd-row:nth-child(even),
-.even-row:nth-child(odd){
-  background-color: #7d935d; /* Light color for even rows and odd columns */
-}
-
-.even-row:nth-child(even),
-.odd-row:nth-child(odd){
-  background-color: #ededd4; /* Dark color for even columns and odd rows */
+.cell{
+  background-color: #e8eccb;
 }
 
 .cell:hover{
@@ -75,9 +68,13 @@ body {
 
 }
 
-.pawn {
+.queen {
   background-color: #FFD700; /* Set a gold background color */
   color: #000; /* Set a black text color */
+  display: flex;
+  justify-content: center;
+  height:100%;
+  font-weight: bold;
   font-weight: bold; /* Make the text bold */
   border: 2px solid #FFA500; /* Add an orange border */
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Add a gold shadow with 70% opacity */
@@ -87,5 +84,19 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 20px;
+}
+
+.dark{
+  background-color: #779854;
+}
+
+.queen-icon {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #ff00ff; /* Adjust the color as needed */
 }

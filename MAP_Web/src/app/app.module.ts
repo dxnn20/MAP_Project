@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule} from "@angular/material/icon";
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,12 +18,12 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     BrowserAnimationsModule,
     MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   clicked = false;
-
 
 }

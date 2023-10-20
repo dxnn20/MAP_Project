@@ -90,9 +90,11 @@ bool  solveProblem(int row){
 
 int main(){
 
-    printf("Table size:\t");
-    scanf_s("%d", &dim[0] );
-    scanf_s("%d", &dim[1] );
+    do {
+        printf("Table size:\t");
+        scanf_s("%d", &dim[0]);
+        scanf_s("%d", &dim[1]);
+    }while(dim[0] <= 1 || dim[1] <= 1);
 
     tableInit();
     printTable();
