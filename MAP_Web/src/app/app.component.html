@@ -17,18 +17,24 @@
   </div>
 </div>
 
-<div id="outerChessBoard">
+<div  >
   <div class="chessboard">
     <div *ngFor="let row of chessboard ; let i = index" class="row">
-      <div *ngFor="let square of row; let j = index" class="cell" [class.dark]="isDarkSquare(i, j)">
+      <div *ngFor="let square of row; let j = index" class="cell" (click) = "chessboard[i][j] = 1" [class.dark]="isDarkSquare(i, j) ">
         <div class="queen" [class.queen]="square === 1">
-          <mat-icon class = "queen-icon">queen_chess</mat-icon>
+          <mat-icon *ngIf="square === 1" fontIcon="star" class = "queen-icon"></mat-icon>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<button mat-raised-button color="primary"  (click)="queensProblem()" class="startButton">Start</button>
+<button *ngIf="!clicked2" mat-raised-button color="primary"  (click)="queensProblem(); clicked = true" class="startButton">{{ startButton }}</button>
+<button *ngIf="!clicked2" mat-raised-button color="primary" (click)="clicked2 = true;initialiseBoard()" class="startButton">{{ manualButton }}</button>
+
+<ng-container *ngIf="clicked2">
+  <button  mat-raised-button color="primary" (click)="clicked2 = false; solveManually()  " class="startButton">{{ checkButton }}</button>
+  <button mat-raised-button color="primary" (click)="clicked2 = false; clicked3=true; resetGame() " class="startButton">{{ breakButton }}</button>
+</ng-container>
 
 </body>

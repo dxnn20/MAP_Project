@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 body {
-  background-color: #9ab5dc;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #b5c7e1;
 }
 
 #fillsUpTop{
@@ -14,13 +13,10 @@ body {
 
 #header{
   width: 80%;
-  margin: auto;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  background-color: #0f71e1;
+  background-color: #4e92e1;
   height: 100px;
   transition: 1s all ease;
 }
@@ -37,29 +33,22 @@ body {
   text-align: center;
 }
 
-.outerChessBoard{
-  display: inline-block;
-}
-
 .chessboard {
-  display: grid;
   justify-content: center;
-  padding-top: 100px;
-  grid-template-columns: repeat(8, 60px); /* 8 columns, each 50px wide */
-  grid-template-rows: repeat(8, 60px); /* 8 rows, each 50px tall */
+  padding-top: 50px;
 }
 
 .dark {
   width: 60px;
   height: 60px;
-  text-align: center;
   line-height: 60px;
   border: 1px solid black;
-  transition: 0.1s all ease;
+  transition: 0.2 all ease;
 }
 
 .cell{
   background-color: #e8eccb;
+  transition: 0.2s all ease;
 }
 
 .cell:hover{
@@ -83,13 +72,10 @@ body {
 .startButton{
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin-top: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin: 40px auto auto;
+  padding: 30px 60px;
   font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .dark{
@@ -97,6 +83,19 @@ body {
 }
 
 .queen-icon {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #ff00ff; /* Adjust the color as needed */
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* Adjust the size as needed */
+  color: #3a3e57; /* Adjust the color as needed */
 }
+
+.manualButtons{
+  margin: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
