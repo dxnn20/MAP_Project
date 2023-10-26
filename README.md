@@ -43,7 +43,7 @@ Here is an overview of the development process of this web page:
 
 8. **Documentation**: The code is documented to make it clear and maintainable. This README serves as project documentation.
 
-9. **Deployment**: The application is built and deployed to a web server, making it accessible to users.
+9. **Deployment**: Will probably not make it public for everyone to be able to access, but it's yours to play around with.
 
 ## Usage
 
