@@ -15,6 +15,7 @@ export class AppComponent {
   manualButton = 'Solve Manually'
   checkButton = 'Check'
   breakButton = 'Break'
+  isDarkMode: boolean = false;
 
   // Define the pawn position (row and column)
 
@@ -126,5 +127,15 @@ export class AppComponent {
     console.log(this.chessboard);
   }
 
+  toggleDarkMode(){
+    this.isDarkMode = !this.isDarkMode
 
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-mode');
+      console.log('ADDED CLASS')
+    } else {
+      document.body.classList.remove('dark-mode');
+      console.log('REMOVED CLASS')
+    }
+  }
 }

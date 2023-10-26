@@ -8,34 +8,38 @@ body {
 }
 
 #fillsUpTop{
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 #header{
   width: 80%;
   padding: 0;
+  margin : auto;
   display: flex;
   border-radius: 10px;
   background-color: #4e92e1;
   height: 100px;
-  transition: 1s all ease;
+  transition: 0.4s all ease;
 }
 
 #header:hover{
   background-color: #1976d0 ;
   border-radius: 30px;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 
 #title{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  margin : auto;
+  transition: 1s all ease;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .chessboard {
-  justify-content: center;
-  padding-top: 50px;
+  display: flex;
+  padding-top: 15px;
+  justify-content: center !important;
+  margin:auto;
 }
 
 .dark {
@@ -43,7 +47,7 @@ body {
   height: 60px;
   line-height: 60px;
   border: 1px solid black;
-  transition: 0.2 all ease;
+  transition: 1s all ease;
 }
 
 .cell{
@@ -98,4 +102,24 @@ body {
   justify-content: center;
 }
 
+.loading{
+  padding-top: 25px;
+  width: 28%;
+  margin:auto;
+}
 
+.dark-mode {
+  transition: 1s all ease;
+  background-color: #333;
+  color: #fff;
+}
+
+.switch{
+}
+
+.outerChessboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
