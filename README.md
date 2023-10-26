@@ -5,7 +5,7 @@ This web application is designed to solve the classic 8-Queens puzzle, a chess p
 ## Table of Contents
 
 - [Algorithm](#algorithm)
-- [Solving the 8-Queens Problem](#solving-the-8-queens-problem)
+- [Solving the 8-Queens Problem](#The-8-queens-puzzle)
 - [Development Process](#development-process)
 - [Usage](#usage)
 - [Customization](#customization)
@@ -14,15 +14,14 @@ This web application is designed to solve the classic 8-Queens puzzle, a chess p
 
 The application uses a backtracking algorithm to solve the 8-Queens puzzle. The algorithm works by recursively trying to place queens on the chessboard, row by row. It checks if the current placement is valid (no two queens can attack each other), and if so, it proceeds to the next row. If a valid solution is found, it is displayed to the user.
 
-### The 8-Queens Puzzle
+## The 8-Queens Puzzle
 
 The 8-Queens puzzle is a classic chess puzzle that challenges you to place eight queens on an 8x8 chessboard in a way that no two queens can attack each other. Queens can move horizontally, vertically, and diagonally. Finding a valid placement for all eight queens is a non-trivial problem that requires careful consideration.
 
-### Backtracking Algorithm
+## Backtracking Algorithm
 
 The backtracking algorithm used in this application systematically explores possible queen placements and checks for validity. It proceeds row by row, placing queens and verifying that they do not threaten each other. When a valid solution is found, it is displayed to the user. If no solution exists for a particular configuration, the algorithm backtracks to explore other possibilities.
 
-## Development Process
 
 ## Development Process
 
